@@ -1,0 +1,407 @@
+/*-----全局参数开始-----*/
+	/*导入字体设置并使用*/
+	@font-face {
+	  font-family: 'icomoon';
+	  src:  url('../fonts/icomoon.eot?727cg');
+	  src:  url('../fonts/icomoon.eot?727cg#iefix') format('embedded-opentype'),
+	    url('../fonts/icomoon.ttf?727cg') format('truetype'),
+	    url('../fonts/icomoon.woff?727cg') format('woff'),
+	    url('../fonts/icomoon.svg?727cg#icomoon') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	[class^="icon-"], [class*=" icon-"] {
+	  /* use !important to prevent issues with browser extensions that change fonts */
+	  font-family: 'icomoon' !important;
+	  speak: none;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  line-height: 1;
+
+	  /* Better Font Rendering =========== */
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	}
+
+	.icon-phone:before {
+	  content: "\e942";
+	  font-size: 13px;
+	}
+	.icon-mobile2:before {
+	  content: "\e959";
+	  font-size: 13px;
+	}
+	.icon-paragraph-justify:before {
+	  content: "\ea7a";
+	  font-size: 13px;
+	}
+	/*导入字体设置并使用*/
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		body{
+			color: #777777;
+			font-size: 14px;
+		}
+		a,span,p{
+			color: #777777;
+		}
+	/*-----自定义按钮开始-----*/
+	.btn-lkbtn { 
+	  color: #FFFFFF; 
+	  background-color: #35B4F7; 
+	  border-color: #35B4F7; 
+	  text-decoration: none;
+	} 
+	 
+	.btn-lkbtn:hover, 
+	.btn-lkbtn:focus, 
+	.btn-lkbtn:active, 
+	.btn-lkbtn.active, 
+	.open .dropdown-toggle.btn-lkbtn { 
+	  color: #FFFFFF; 
+	  background-color: #2f6df2; 
+	  border-color: #35B4F7; 
+	  text-decoration: none;
+	} 
+	 
+	.btn-lkbtn:active, 
+	.btn-lkbtn.active, 
+	.open .dropdown-toggle.btn-lkbtn { 
+	  background-image: none; 
+	} 
+	 
+	.btn-lkbtn.disabled, 
+	.btn-lkbtn[disabled], 
+	fieldset[disabled] .btn-lkbtn, 
+	.btn-lkbtn.disabled:hover, 
+	.btn-lkbtn[disabled]:hover, 
+	fieldset[disabled] .btn-lkbtn:hover, 
+	.btn-lkbtn.disabled:focus, 
+	.btn-lkbtn[disabled]:focus, 
+	fieldset[disabled] .btn-lkbtn:focus, 
+	.btn-lkbtn.disabled:active, 
+	.btn-lkbtn[disabled]:active, 
+	fieldset[disabled] .btn-lkbtn:active, 
+	.btn-lkbtn.disabled.active, 
+	.btn-lkbtn[disabled].active, 
+	fieldset[disabled] .btn-lkbtn.active { 
+	  background-color: #35B4F7; 
+	  border-color: #35B4F7; 
+	} 
+	 
+	.btn-lkbtn .badge { 
+	  color: #35B4F7; 
+	  background-color: #FFFFFF; 
+	}
+	/*-----自定义按钮结束-----*/
+/*-----全局参数结束-----*/
+
+/*-----头部顶端副导航开始-----*/
+.headbar{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.headbar .container .row div{
+	text-align: center;
+}
+.headbar .container .row div:nth-child(n+2){
+	border-left: 1px solid #e0e0e0;
+}
+.headbar .container .row div:nth-child(1){
+	position: relative;
+}
+.headbar .container .row img{
+	height: 150px;
+	width: auto;
+	display: none;
+	position: absolute;
+	top:40px;
+}
+#guanzhu:hover img{
+	display: block;
+	z-index: 998;
+}
+.headbar .container .row div:nth-child(3) a{
+	margin-left: 10px;
+}
+.headbar .container .row div:nth-child(4) a{
+	margin-left: 17px;
+}
+/*-----头部顶端副导航结束-----*/
+
+/*-----头部主导航开始-----*/
+.head-main-navbar .navbar{
+	background-color: white;
+	margin-bottom: 0;
+}
+.head-main-navbar .navbar .container .navbar-header .navbar-brand img{
+	width: 180px;
+	height: auto;
+}
+.head-main-navbar .navbar .container .navbar-header a{
+	height: 70px;
+	padding:8px 2px;
+}
+.head-main-navbar .navbar .container .navbar-header .navbar-toggle{
+	margin-top: 20px;
+}
+.head-main-navbar .navbar .container .collapse a{
+	padding-top: 0;
+	line-height: 70px;
+	height: 70px;
+}
+.head-main-navbar .navbar .container .collapse a:hover,
+.head-main-navbar .navbar .container .collapse .active{
+	border-bottom: 2px solid #35b4f7;
+}
+/*-----头部主导航结束-----*/
+
+/*-----轮播图开始-----*/
+#lk-carousel .carousel-inner .item{
+	background: no-repeat center center;
+	background-size: cover;
+}
+@media screen and (min-width: 768px){
+	#lk-carousel .carousel-inner .item{
+	height: 412px;
+	}
+}
+/*-----轮播图结束-----*/
+
+/*-----关于我们开始-----*/
+.about-us{
+	margin-top: 43px
+}
+.about-us h1,.about-lesson h1,.about-friend h1{
+	color: black;
+	margin-top: 0px;
+}
+.about-us img,.about-lesson img,.about-friend img{
+	margin-bottom: 32px;
+}
+.about-us .container p{
+	font-size: 15px;
+	line-height: 28px;
+}
+/*-----关于我们结束-----*/
+
+/*-----选项卡tab开始-----*/
+#lk-tab-card{
+	background-color: #efeff0;
+	padding: 27px 0;
+}
+@media screen and (min-width: 992px){
+	#lk-tab-card{
+		height: 657px;
+	}
+}
+#lk-tab-card .container .of{
+	overflow: auto;
+}
+/*#lk-tab-card .container .of .nav{
+	width: 900px;
+}*/
+#lk-tab-card .container .nav .active a{
+	background-color: #efeef0;
+	border-width: 0px 0px 1px 0px;
+	border-bottom: 2px solid #36b4f7;
+	color: black;
+}
+#lk-tab-card .container .nav li a{
+	font-size: 18px;
+	color: #9a9a9a;
+}
+#lk-tab-card .container .nav li a:hover{
+	background-color: #eeeeee;
+}
+/*-----选项卡tab结束-----*/
+
+/*-----选项卡div开始-----*/
+	/*在线大学*/
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-A{
+		position: relative;
+		height: 142px;
+		margin-top: 75px;
+		margin-bottom: 28px;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-A img{
+		height: 142px;
+		width: 142px;
+		float: left;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-A .img-h{
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-A .img-h p{
+		margin:0px 10px;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-B{
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-B ul{
+		margin: 0px;
+		font-size: 20px;
+		font-weight: 300;
+		padding: 0 20px;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-B li{
+		float: left;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-B li a{
+		text-decoration-color: #23527c; 
+		color: #337ab7;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-B li a:hover{
+		color: #1c4a76;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-B li:nth-child(-n+3) a:after{
+		content: "/";
+		text-align: center;
+		display: inline-block;
+		color: #cccccc;
+		width: 30px;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-C{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-C h{
+		font-size: 35px;
+		margin-right: 32px;
+		font-weight: 600;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-C h:nth-child(1){
+		color: black;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-C h:nth-child(2){
+		color: #a94442;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-D button{
+		margin-right: 23px;
+	}
+	#lk-tab-card .container .tab-content #zaixiandaxue .part-E{
+		margin-top: 20px;
+	}
+
+	/*会员专享*/
+	#lk-tab-card .container .tab-content #huiyuanzhuanxiang .part-A{
+		margin-top: 20px;
+	}
+	#lk-tab-card .container .tab-content #huiyuanzhuanxiang h1{
+		color: #8a6d3b;
+		margin-top: 140px;
+	}	
+	#lk-tab-card .container .tab-content #huiyuanzhuanxiang p{
+		font-size: 20px;
+		font-weight: 300;
+		color: black;
+	}
+	/*优质视频*/
+	#lk-tab-card .container .tab-content #youzhishiping{
+
+	}
+	#lk-tab-card .container .tab-content #youzhishiping .part-A{
+		margin-top: 60px;
+	}
+	#lk-tab-card .container .tab-content #youzhishiping .part-A h3{
+		color: black;
+	}
+	#lk-tab-card .container .tab-content #youzhishiping .part-A .badge{
+		padding: 15px 10px;
+	}
+	/*更多*/
+/*-----选项卡div结束-----*/
+
+/*-----热门课程开始-----*/
+.about-lesson{
+	margin-top: 45px;
+}
+.about-lesson .container .media{
+	padding: 15px 10px;
+	height: 120px;
+}
+.about-lesson .container .media .media-left{
+	width: 20%;
+}
+.about-lesson .container .media .media-left img{
+	width: 100px;
+	position: relative;
+	top: 15px;
+}
+.about-lesson .container .media .media-body{
+	width: 60%;
+}
+.about-lesson .container .media .media-right{
+	width: 20%;
+}
+.about-lesson .container .media .media-right span{
+	font-size: 16px;
+}
+
+/*-----热门课程结束-----*/
+
+/*-----友情链接开始-----*/
+.about-friend{
+	margin-top: 50px;
+}
+.about-friend .logos{
+	text-align: center;
+}
+.about-friend .logos li{
+	display: inline-block;
+	margin: 20px;
+}
+/*-----友情链接结束-----*/
+
+/*-----尾部开始-----*/
+.footer{
+	background:url("../imgs/ft_bg.png") no-repeat center center;
+	height: 200px;
+	color: white;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.footer .container .row>div{
+	height: 180px;
+}
+.footer .container .row>div:nth-child(1){
+	height: 180px;
+	border-right: 1px solid #666;
+}
+.footer .container .row>div:nth-child(1) ul{
+	height: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: -30px;
+}
+.footer .container .row>div:nth-child(1) li{
+	margin: 10px 0; 
+}
+.footer .container .row>div:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border-right: 1px solid #666;
+}
+.footer .container .row>div:nth-child(3){
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 30px;
+}
+.footer .container .row>div:nth-child(3) img{
+	width: 50px;
+	height: 50px;
+}
+/*-----尾部结束-----*/
